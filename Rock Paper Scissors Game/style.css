@@ -1,0 +1,203 @@
+body {
+  font-family: Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: gray solid 16px;
+  border-top: 0;
+  max-width: 600px;
+  width: 600px;
+  height: 500px;
+}
+h2 {
+  background-color: gray;
+  margin: 0;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 4px;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.status {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 50px;
+}
+.img-quality {
+  width: 200px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  background-color: hwb(240 62% 7% / 0.23);
+  border: blue solid 1px;
+  justify-content: center;
+  width: 100%;
+  height: 200px;
+}
+.child-descriptionOne {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100px;
+}
+.child-descriptionTwo {
+  display: flex;
+  justify-content: space-around;
+}
+
+.js-stat {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+}
+.simple-text {
+  text-align: center;
+  background-color: rgba(169, 169, 197, 0.417);
+  padding: 4px;
+  border-radius: 8px;
+  width: 80%;
+}
+
+.main-btn {
+  width: 100px;
+  padding: 14px 6px;
+  background-color: hsla(186, 13%, 71%, 0.663);
+  color: black;
+  border: none;
+  font-size: 16px;
+  border-radius: 6px;
+  box-shadow: 5px 5px 5px hsla(0, 1%, 23%, 0.157);
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.main-btn:hover {
+  background-color: hsla(188, 15%, 59%, 0.724);
+}
+.main-btn:active {
+  background-color: hsla(188, 15%, 59%, 0.263);
+}
+
+.main-btn-div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.js-del-btn,
+.js-auto-play {
+  padding: 12px 6px;
+  border: none;
+  box-shadow: 5px 5px 5px hsla(0, 1%, 23%, 0.157);
+  border-radius: 6px;
+  transition: 0.3s;
+}
+.js-del-btn:hover {
+  padding: 12px 6px;
+  border: none;
+  box-shadow: 5px 5px 5px hsla(0, 1%, 23%, 0.157);
+  border-radius: 6px;
+  transition: 0.3s;
+  background-color: hsla(190, 13%, 73%, 0.624);
+}
+.js-auto-play:hover {
+  background-color: hsla(190, 13%, 73%, 0.624);
+}
+
+.css-result {
+  font-weight: bold;
+  font-size: 22px;
+  margin: 6px;
+}
+span {
+  font-weight: normal;
+  font-size: 16px;
+  margin: 0px 6px;
+}
+
+/* Shake animation */
+@keyframes shake {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  75% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.shake {
+  animation: shake 1.5s ease-in-out 3; /* Adjust duration and iteration as needed */
+}
+
+.disable-btn-main button {
+  opacity: 0.7;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+.del-btn {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.hide-two-buttons {
+  opacity: 0;
+}
+
+@media only screen and (max-width: 400px) {
+  .main {
+    width: 370px;
+  }
+  .img-quality {
+    width: 130px;
+  }
+  .status {
+    width: 300px;
+  }
+  .player-stats,
+  .computer-stats {
+    margin-right: 20px;
+  }
+
+  .js-del-btn,
+  .js-auto-play {
+    padding: 6px 8px;
+  }
+  .child-descriptionTwo {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .js-scoring {
+    margin-right: 18px;
+  }
+  .description {
+    justify-content: space-around;
+  }
+}
