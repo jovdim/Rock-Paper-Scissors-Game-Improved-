@@ -220,14 +220,14 @@ span {
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 370px) {
   .main {
-    width: 392px;
+    width: 362px;
     height: 100vh;
     border: gray solid 4px;
   }
   .js-stat {
-    width: 390px;
+    width: 362px;
     justify-content: space-around;
   }
   .img-quality {
