@@ -74,6 +74,8 @@ function display(playerPick = "Rock", computerChoice = "Rock", result) {
     !playerStatus.classList.contains("shake") ||
     !computerStats.classList.contains("shake")
   ) {
+    playerStats = ` <img class="img-quality" src="./assets/img/p-Rock.png" alt="error">`;
+    comStats = ` <img class="img-quality" src="./assets/img/c-Rock.png" alt="error">`;
     showDefault();
 
     btnMainElem.classList.add("disable-btn-main");
