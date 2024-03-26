@@ -220,6 +220,58 @@ span {
   }
 }
 
+@media only screen and (max-width: 460px) {
+  .main {
+    width: 452px;
+    height: 100vh;
+    border: gray solid 4px;
+  }
+  .js-stat {
+    width: 452px;
+    justify-content: space-around;
+  }
+  .img-quality {
+    width: 170px;
+  }
+  .status {
+    width: 370px;
+    margin: 0;
+    margin-top: 12px;
+  }
+.css-result{
+  margin-top: 12px;
+}
+ 
+ 
+  .js-del-btn,
+  .js-auto-play {
+    padding: 10px 4px;
+    text-align: center;
+    margin-top: 4px;
+  }
+  .child-descriptionTwo {
+    font-size: 14px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+  .main-btn-div{
+    width: 370px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .js-scoring {
+    margin-right: 18px;
+  }
+  .description {
+    justify-content: space-evenly;
+   height: 250px;
+    
+  }
+}
+
+
 
 @media only screen and (max-width: 350px) {
   .main {
