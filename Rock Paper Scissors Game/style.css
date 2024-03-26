@@ -169,6 +169,58 @@ span {
   opacity: 0;
 }
 
+@media only screen and (max-width: 492px) {
+  .main {
+    width: 482px;
+    height: 94vh;
+    border: gray solid 4px;
+  }
+  .js-stat {
+    width: 482px;
+    justify-content: space-around;
+  }
+  .img-quality {
+    width: 160px;
+  }
+  .status {
+    width: 400px;
+    margin: 0;
+    margin-top: 12px;
+  }
+.css-result{
+  margin-top: 12px;
+}
+ 
+ 
+  .js-del-btn,
+  .js-auto-play {
+    padding: 12px 8px;
+    text-align: center;
+    margin-top: 4px;
+  }
+  .child-descriptionTwo {
+    font-size: 14px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+  .main-btn-div{
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .js-scoring {
+    margin-right: 18px;
+  }
+  .description {
+    justify-content: space-evenly;
+   height: 250px;
+    
+  }
+}
+
+
 @media only screen and (max-width: 350px) {
   .main {
     width: 350px;
@@ -190,6 +242,7 @@ span {
   .main-btn {
     padding: 6px 2px;
     margin: 0 2px;
+    
   }
   .two-buttons {
     display: flex;
@@ -207,7 +260,7 @@ span {
     justify-content: center;
     align-items: center;
   }
-   .main-btn-div{
+  .main-btn-div{
     width: 330px;
   }
   .js-scoring {
@@ -217,3 +270,4 @@ span {
     justify-content: space-around;
   }
 }
+
