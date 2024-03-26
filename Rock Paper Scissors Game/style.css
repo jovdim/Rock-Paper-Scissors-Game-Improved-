@@ -207,8 +207,8 @@ span {
     justify-content: center;
     align-items: center;
   }
-  .main-btn-div{
-    width: 0;
+   .main-btn-div{
+    width: 330px;
   }
   .js-scoring {
     margin-right: 18px;
