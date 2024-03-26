@@ -96,8 +96,9 @@ h2 {
 }
 
 .main-btn-div {
+  width: 600px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .js-del-btn,
@@ -109,7 +110,6 @@ h2 {
   transition: 0.3s;
 }
 .js-del-btn:hover {
-  padding: 12px 6px;
   border: none;
   box-shadow: 5px 5px 5px hsla(0, 1%, 23%, 0.157);
   border-radius: 6px;
@@ -174,10 +174,8 @@ span {
     width: 350px;
     height: 98vh;
     border: gray solid 4px;
-    
-    
   }
-  .js-stat{
+  .js-stat {
     justify-content: space-around;
   }
   .img-quality {
@@ -185,19 +183,18 @@ span {
   }
   .status {
     width: 280px;
-    margin:  0;
+    margin: 0;
     margin-top: 12px;
-    
   }
-  
-.main-btn{
-  padding: 6px 2px;
-  margin:0 2px;
-}
-.two-buttons{
-  display: flex;
-  flex-direction: column;
-}
+
+  .main-btn {
+    padding: 6px 2px;
+    margin: 0 2px;
+  }
+  .two-buttons {
+    display: flex;
+    flex-direction: column;
+  }
   .js-del-btn,
   .js-auto-play {
     padding: 6px 2px;
@@ -210,7 +207,9 @@ span {
     justify-content: center;
     align-items: center;
   }
-
+  .main-btn-div{
+    width: 0;
+  }
   .js-scoring {
     margin-right: 18px;
   }
